@@ -1,50 +1,145 @@
-# Welcome to your Expo app 👋
+☕ Coffee Shop App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+📱 Project Overview
 
-## Get started
+This is a Coffee Shop application built using React Native (Expo) for the frontend and Node.js + Express + MongoDB for the backend.
 
-1. Install dependencies
+The app allows users to:
 
-   ```bash
-   npm install
-   ```
+View coffee menu items from a database
 
-2. Start the app
+Fetch a random available coffee
 
-   ```bash
-   npx expo start
-   ```
+Interact with a real backend deployed on Vercel
 
-In the output, you'll find options to open the app in a
+Run on Android devices using an APK built with EAS
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+🧰 Tech Stack
+Frontend
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+React Native
 
-## Get a fresh project
+Expo
 
-When you're ready, run:
+Axios
 
-```bash
-npm run reset-project
-```
+Backend
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Node.js
 
-## Learn more
+Express.js
 
-To learn more about developing your project with Expo, look at the following resources:
+MongoDB Atlas
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Mongoose
 
-## Join the community
+Deployed on Vercel
 
-Join our community of developers creating universal apps.
+✅ Requirements
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Before running the project, make sure you have:
+
+Node.js (v18 or later recommended)
+
+Git
+
+Expo Go app (for testing) OR Android device
+
+MongoDB Atlas account
+
+Vercel account (for backend deployment)
+
+Optional but recommended:
+
+Android Studio (for emulator)
+
+EAS CLI
+
+📂 Project Structure
+Frontend (React Native)
+│── App.js
+│── screens/
+│── components/
+│── assets/
+
+Backend (Vercel)
+│── api/
+│   └── index.js
+│── package.json
+│── vercel.json
+│── seed.js
+
+🚀 How to Run the Project (Frontend)
+
+Clone the repository:
+
+git clone <repository-url>
+cd coffee-shop
+
+
+Install dependencies:
+
+npm install
+
+
+Start Expo:
+
+npx expo start
+
+
+Open the app:
+
+Scan QR code using Expo Go
+
+OR run on Android emulator
+
+🌐 Backend API (Already Deployed)
+
+The backend is deployed on Vercel and connected to MongoDB Atlas.
+
+API Endpoints:
+
+Get all menu items:
+
+GET /api/menu
+
+
+Get random available item:
+
+GET /api/menu/random
+
+
+Backend Base URL:
+
+https://backend-for-vercel.vercel.app
+
+🔐 Environment Variables (Backend)
+
+The backend uses environment variables on Vercel:
+
+MONGO_URI = MongoDB Atlas connection string
+
+
+MongoDB credentials are not stored in the code for security reasons.
+
+📦 APK Download
+
+Android APK built using EAS Build.
+
+👉 APK Download Link:
+
+[Apk File](https://drive.google.com/file/d/1BKIWp3NSpzRKIz-t9Yqp0ntxqejauVsd/view?usp=drive_link)
+
+🎥 Demo Video
+
+Demo is available on YouTube.
+
+👉 YouTube Demo Video:
+
+ Coming soon
+
+👨‍💻 Author
+
+Talha Shahbaz
+Student | Beginner Full-Stack Developer
+React Native • Node.js • MongoDB
